@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mapper</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+   <script src="https://unpkg.com/esri-leaflet@2.0.8"></script>
+   <link rel="stylesheet" href="https://unpkg.com/esri-leaflet-geocoder@2.2.4/dist/esri-leaflet-geocoder.css" />
+  <script src="https://unpkg.com/esri-leaflet-geocoder@2.2.4"></script>
+   <style>
+   #mapid { position: absolute; top: 0; left: 0; bottom: 0; right: 0; }
+</style>
+</head>
+
+
+    <div id="mapid"></div>
+
+
+    <script>
+        const mymap = L.map('mapid').setView([51.505, -0.09], 13);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(mymap);
+
+
+        var searchControl=L.esri.Geocoding.geosearch().addTo(mymap)
+        var results = L.layerGroup().addTo(mymap);
+        console.log(choice);
+        searchControl.on('results',function(data){
+            results.clearLayers();
+            for(var i=data.results.length-1;i>=0;i--){
+                results.addLayer(L.marker(data.results[i].latlng))
+                var choice=data.results[i].text;
+
+            }
+        })
+        
+
+    </script>
+</body>
+
+</html>
