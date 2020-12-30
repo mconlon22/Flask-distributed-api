@@ -1,28 +1,47 @@
 import flask
-import pandas as pd
-import sql
-from flask import current_app, flash, jsonify, make_response, redirect, request, url_for
-from flask import Response
+from flask import jsonify,  request
+from flask_sqlalchemy import SQLAlchemy
+from flask_marshmallow import Marshmallow
+from sqlalchemy import and_
 
-import json
 
-app =flask.Flask("HousePriceAPI")
+app = flask.Flask("HousePriceAPI")
+ma = Marshmallow(app)
+
 app.config["DEBUG"] = True
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://test:password@10.109.208.141:5445/postgres'
+db = SQLAlchemy(app)
 
-instance=sql
-@app.route('/getHousePrices', methods=['GET', 'POST'])
+
+
+class House(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    year = db.Column(db.Integer)
+    address = db.Column(db.String(100), nullable=False)
+    price = db.Column(db.Float)
+    lat = db.Column(db.Float)
+    lon = db.Column(db.Float)
+
+
+class HouseSchema(ma.Schema):
+    class Meta:
+        model = House
+        fields = ("price", "address", "lat", "lon")
+
+
+@app.route('/getHousePrices', methods=['POST'])
 def index():
     if request.method == 'POST':
-        x=request.form.get('x')
-        y=request.form.get('y')
+        lat = float(request.form.get('lat'))
+        lon = float(request.form.get('lon'))
+        print(lat, lon)
+        house_schema = HouseSchema(many=True)
+        housePrices = House.query.filter(and_(House.lat.between(lat-.005, lat+.005), House.lon.between(lon-.005, lon+.005))).limit(200).all()
+
+        output = house_schema.dump(housePrices)
+        print(output)
+        return jsonify(output)
 
 
-        result=instance.find_sold_houses(float(x),float(y)).to_json(orient="split")
-        parsed = json.loads(result)
-        return Response(json.dumps(parsed, indent=4) ,  mimetype='application/json')
-app.run()
-
-        
-
-
-        
+if __name__ == '__main__':
+    app.run(host="0.0.0.0", port=82,debug=True)

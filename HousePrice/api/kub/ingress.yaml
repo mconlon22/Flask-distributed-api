@@ -1,0 +1,19 @@
+
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name:  house-price-api-service-7657d9688-nwk67
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+  - host: housePrice
+    http:
+      paths:
+      - path: /getHousePrices
+        pathType: Prefix
+        backend:
+          service:
+            name:  house-price-api-service-7657d9688-nwk67
+            port:
+              number: 82

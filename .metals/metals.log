@@ -63,3 +63,105 @@ INFO: Unsupported notification method: $/setTraceNotification
 Dec 06, 2020 10:48:46 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTraceNotification
 2020.12.06 23:19:02 INFO  shutting down Metals
+2020.12.08 00:15:07 INFO  Started: Metals version 0.9.7 in workspace 'C:\Users\marti\Desktop\4th year\distributed systems\distributedProject' for client vscode.
+2020.12.08 00:15:09 INFO  time: initialize in 1.73s
+2020.12.08 00:15:09 WARN  Build server is not auto-connectable.
+2020.12.08 00:15:09 WARN  no build tool detected in workspace 'C:\Users\marti\Desktop\4th year\distributed systems\distributedProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.08 14:27:01 INFO  shutting down Metals
+2020.12.08 14:30:13 INFO  Started: Metals version 0.9.7 in workspace 'C:\Users\marti\Desktop\4th year\distributed systems\distributedProject' for client vscode.
+2020.12.08 14:30:15 INFO  time: initialize in 1.66s
+2020.12.08 14:30:15 WARN  Build server is not auto-connectable.
+2020.12.08 14:30:15 WARN  no build tool detected in workspace 'C:\Users\marti\Desktop\4th year\distributed systems\distributedProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.08 15:06:22 INFO  shutting down Metals
+2020.12.08 19:37:54 INFO  Started: Metals version 0.9.7 in workspace 'C:\Users\marti\Desktop\4th year\distributed systems\distributedProject' for client vscode.
+2020.12.08 19:37:56 INFO  time: initialize in 1.96s
+2020.12.08 19:37:56 WARN  Build server is not auto-connectable.
+2020.12.08 19:37:56 WARN  no build tool detected in workspace 'C:\Users\marti\Desktop\4th year\distributed systems\distributedProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.08 20:19:11 INFO  shutting down Metals
+2020.12.08 21:12:16 INFO  Started: Metals version 0.9.7 in workspace 'C:\Users\marti\Desktop\4th year\distributed systems\distributedProject' for client vscode.
+2020.12.08 21:12:18 INFO  time: initialize in 2.01s
+2020.12.08 21:12:19 WARN  Build server is not auto-connectable.
+2020.12.08 21:12:19 WARN  no build tool detected in workspace 'C:\Users\marti\Desktop\4th year\distributed systems\distributedProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.09 01:18:47 INFO  shutting down Metals
+2020.12.10 17:47:14 INFO  Started: Metals version 0.9.7 in workspace 'C:\Users\marti\Desktop\4th year\distributed systems\distributedProject' for client vscode.
+2020.12.10 17:47:16 INFO  time: initialize in 1.59s
+2020.12.10 17:47:17 WARN  Build server is not auto-connectable.
+2020.12.10 17:47:17 WARN  no build tool detected in workspace 'C:\Users\marti\Desktop\4th year\distributed systems\distributedProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.11 00:55:42 INFO  shutting down Metals
+2020.12.11 10:01:02 INFO  Started: Metals version 0.9.7 in workspace 'C:\Users\marti\Desktop\4th year\distributed systems\distributedProject' for client vscode.
+2020.12.11 10:01:04 INFO  time: initialize in 1.83s
+2020.12.11 10:01:04 WARN  Build server is not auto-connectable.
+2020.12.11 10:01:04 WARN  no build tool detected in workspace 'C:\Users\marti\Desktop\4th year\distributed systems\distributedProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.11 15:29:14 INFO  shutting down Metals
+2020.12.12 19:37:34 INFO  Started: Metals version 0.9.7 in workspace 'C:\Users\marti\Desktop\4th year\distributed systems\distributedProject' for client vscode.
+2020.12.12 19:37:36 INFO  time: initialize in 1.51s
+2020.12.12 19:37:36 WARN  Build server is not auto-connectable.
+2020.12.12 19:37:36 WARN  no build tool detected in workspace 'C:\Users\marti\Desktop\4th year\distributed systems\distributedProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.13 00:40:32 INFO  shutting down Metals
+2020.12.13 17:18:10 INFO  Started: Metals version 0.9.7 in workspace 'C:\Users\marti\Desktop\4th year\distributed systems\distributedProject' for client vscode.
+2020.12.13 17:18:11 INFO  time: initialize in 1.28s
+2020.12.13 17:18:11 WARN  Build server is not auto-connectable.
+2020.12.13 17:18:11 WARN  no build tool detected in workspace 'C:\Users\marti\Desktop\4th year\distributed systems\distributedProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.13 18:31:50 INFO  shutting down Metals
+2020.12.17 15:57:30 INFO  Started: Metals version 0.9.7 in workspace 'C:\Users\marti\Desktop\4th year\distributed systems\distributedProject' for client vscode.
+2020.12.17 15:57:32 INFO  time: initialize in 1.76s
+2020.12.17 15:57:33 WARN  Build server is not auto-connectable.
+2020.12.17 15:57:33 WARN  no build tool detected in workspace 'C:\Users\marti\Desktop\4th year\distributed systems\distributedProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.17 19:49:44 INFO  shutting down Metals
+2020.12.17 22:16:50 INFO  Started: Metals version 0.9.7 in workspace 'C:\Users\marti\Desktop\4th year\distributed systems\distributedProject' for client vscode.
+2020.12.17 22:16:51 INFO  time: initialize in 1.64s
+2020.12.17 22:16:52 WARN  Build server is not auto-connectable.
+2020.12.17 22:16:52 WARN  no build tool detected in workspace 'C:\Users\marti\Desktop\4th year\distributed systems\distributedProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+Dec 17, 2020 10:59:07 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+Dec 17, 2020 10:59:14 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+Dec 17, 2020 11:00:01 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+Dec 17, 2020 11:00:01 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+2020.12.18 00:42:04 INFO  shutting down Metals
+2020.12.18 09:09:26 INFO  Started: Metals version 0.9.7 in workspace 'C:\Users\marti\Desktop\4th year\distributed systems\distributedProject' for client vscode.
+2020.12.18 09:09:27 INFO  time: initialize in 1.73s
+2020.12.18 09:09:28 WARN  Build server is not auto-connectable.
+2020.12.18 09:09:28 WARN  no build tool detected in workspace 'C:\Users\marti\Desktop\4th year\distributed systems\distributedProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.20 13:09:34 INFO  shutting down Metals
+2020.12.21 14:02:39 INFO  Started: Metals version 0.9.8 in workspace 'C:\Users\marti\Desktop\4th year\distributed systems\distributedProject' for client vscode.
+2020.12.21 14:02:40 INFO  time: initialize in 1.43s
+2020.12.21 14:02:41 WARN  Build server is not auto-connectable.
+2020.12.21 14:02:41 WARN  no build tool detected in workspace 'C:\Users\marti\Desktop\4th year\distributed systems\distributedProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+Dec 21, 2020 8:17:42 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+Dec 21, 2020 8:17:43 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+Dec 21, 2020 8:17:43 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+Dec 21, 2020 8:17:46 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+2020.12.22 13:14:11 INFO  shutting down Metals
+2020.12.24 16:59:08 INFO  Started: Metals version 0.9.8 in workspace 'C:\Users\marti\Desktop\4th year\distributed systems\distributedProject' for client vscode.
+2020.12.24 16:59:09 INFO  time: initialize in 1.38s
+2020.12.24 16:59:14 WARN  Build server is not auto-connectable.
+2020.12.24 16:59:14 WARN  no build tool detected in workspace 'C:\Users\marti\Desktop\4th year\distributed systems\distributedProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.24 17:55:38 INFO  Started: Metals version 0.9.8 in workspace 'C:\Users\marti\Desktop\4th year\distributed systems\distributedProject' for client vscode.
+2020.12.24 17:55:40 INFO  time: initialize in 1.38s
+2020.12.24 17:55:44 WARN  Build server is not auto-connectable.
+2020.12.24 17:55:44 WARN  no build tool detected in workspace 'C:\Users\marti\Desktop\4th year\distributed systems\distributedProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.24 19:07:06 INFO  shutting down Metals
+2020.12.24 20:27:12 INFO  Started: Metals version 0.9.8 in workspace 'C:\Users\marti\Desktop\4th year\distributed systems\distributedProject' for client vscode.
+2020.12.24 20:27:13 INFO  time: initialize in 1.33s
+2020.12.24 20:27:14 WARN  Build server is not auto-connectable.
+2020.12.24 20:27:14 WARN  no build tool detected in workspace 'C:\Users\marti\Desktop\4th year\distributed systems\distributedProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+Dec 24, 2020 9:37:13 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
+2020.12.24 23:05:43 INFO  shutting down Metals
+2020.12.25 16:24:54 INFO  Started: Metals version 0.9.8 in workspace 'C:\Users\marti\Desktop\4th year\distributed systems\distributedProject' for client vscode.
+2020.12.25 16:24:55 INFO  time: initialize in 1.35s
+2020.12.25 16:24:56 WARN  Build server is not auto-connectable.
+2020.12.25 16:24:56 WARN  no build tool detected in workspace 'C:\Users\marti\Desktop\4th year\distributed systems\distributedProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.25 19:22:39 INFO  shutting down Metals
+2020.12.27 14:46:58 INFO  Started: Metals version 0.9.8 in workspace 'C:\Users\marti\Desktop\4th year\distributed systems\distributedProject' for client vscode.
+2020.12.27 14:47:00 INFO  time: initialize in 1.24s
+2020.12.27 14:47:01 WARN  Build server is not auto-connectable.
+2020.12.27 14:47:01 WARN  no build tool detected in workspace 'C:\Users\marti\Desktop\4th year\distributed systems\distributedProject'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2020.12.27 16:47:48 INFO  shutting down Metals

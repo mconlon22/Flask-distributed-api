@@ -13,37 +13,110 @@
    <script src="https://unpkg.com/esri-leaflet@2.0.8"></script>
    <link rel="stylesheet" href="https://unpkg.com/esri-leaflet-geocoder@2.2.4/dist/esri-leaflet-geocoder.css" />
   <script src="https://unpkg.com/esri-leaflet-geocoder@2.2.4"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="http://serverapi.arcgisonline.com/jsapi/arcgis/3.5/js/esri/css/esri.css"> 
+   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDp3YVDuLumOSd_jdEUxeDkN4g1fkWR9Vk&libraries=places"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+
    <style>
-   #mapid { position: absolute; top: 0; left: 0; bottom: 0; right: 0; }
+       #mapid{ position: relative;    width: 80%; height: 100%;top: 0; right: 0; bottom: 0; left: 0;  ;z-index: 0;
+}
+       .wrapper {
+  position: fixed;
+  width: 100%; height: 100%;
+}
+#search {
+    display: block;
+    position: absolute;
+    z-index: 3;
+    top: 20px;
+    left: 75px;
+  }
+  .card{
+        width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  }
+  
+
+  .form-group{
+    margin-left: auto;
+    display: block;
+    margin-right: auto; 
+   
+    width:50%;
+    height:50%;
+
+  }
 </style>
 </head>
+<form id='form'>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Search For Property</label>
+  <input class="form-control" id="searchAddress"></input>
+    
+  </div>
+  <div class="form-group">
+  </div>
+  <div class="form-group">
 
+    <label for="exampleFormControlSelect1">Select Property Type</label>
+    <select class="form-control" id="property-type">
+      <option>Semi detached house</option>
+      <option>All property types</option>
+      <option>Other flats</option>
+      <option>Apartment</option>
+      <option>Terrace house</option>
+      <option>Detached house</option>
+
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect2">Number Of Bedrooms</label>
+    <select class="form-control" id="numBeds">
+      <option value=1>1</option>
+      <option value=2>2</option>
+      <option value=3>3</option>
+      <option value=4>>3</option>
+
+
+    </select>
+    <br>
+    <button type="submit"  class="btn btn-primary">Search</button>
+
+
+  </div>
+  
+
+</form>
+<div class="wrapper">
+    
 
     <div id="mapid"></div>
+    <div class="card" style="width: 18rem;">
+    <canvas id="myChart" ></canvas>
+</div>
 
 
-    <script>
-        const mymap = L.map('mapid').setView([51.505, -0.09], 13);
-
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(mymap);
+</div>
 
 
-        var searchControl=L.esri.Geocoding.geosearch().addTo(mymap)
-        var results = L.layerGroup().addTo(mymap);
-        console.log(choice);
-        searchControl.on('results',function(data){
-            results.clearLayers();
-            for(var i=data.results.length-1;i>=0;i--){
-                results.addLayer(L.marker(data.results[i].latlng))
-                var choice=data.results[i].text;
+    
+<script type="module" src="rentsChart.js"></script>
 
-            }
-        })
-        
+    
 
-    </script>
+<script>
+
+
+
+       </script>
+
 </body>
 
 </html>
